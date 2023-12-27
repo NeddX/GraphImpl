@@ -1,9 +1,9 @@
-#include <iostream>
 #include "Graph.h"
+#include <iostream>
 
 int main()
 {
-	my::Graph g(10);
+    my::Graph g(10);
     g.AddEdge(0, 1);
     g.AddEdge(0, 2);
     g.AddEdge(1, 3);
@@ -22,5 +22,5 @@ int main()
     for (const auto& e : g.GetShortestPath(0, 9))
         std::cout << e << ' ';
     std::cout << std::endl;
-	return 0;
+    return 0;
 }
